@@ -1,8 +1,8 @@
 let allData = []; // Stocker les données ici
 
-function projetData(dataToRender) {
-     if (dataToRender) {
-          renderData(dataToRender);
+function projetData(data) {
+     if (data) {
+          renderData(data);
      } else {
           fetch('http://localhost:5678/api/works')
                .then((response) => {
@@ -11,7 +11,7 @@ function projetData(dataToRender) {
                .then((data) => {
                     allData = data; // Stockez les données pour une utilisation ultérieure
                     renderData(data);
-                    createFilterButtons(allData);
+                    createFilterButtons(data);
                })
                .catch((error) => {
                     console.error('Error:', error);
