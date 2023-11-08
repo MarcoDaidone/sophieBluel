@@ -19,6 +19,8 @@ function projetData(data) {
      }
 }
 
+//
+
 function renderData(data) {
      document.querySelector('.gallery').innerHTML = ''; // Vider la galerie avant de rendre
 
@@ -42,6 +44,7 @@ function renderData(data) {
      let buttonsContainer = document.querySelector('.filter');
      projetData.innerHTML = '';
 }
+// pas de fonction dans une fonction (mettre ça au propre)
 
 function createFilterButtons(data) {
      let categories = data.map((item) => item.category.name); // Utiliser Set pour obtenir des catégories uniques
