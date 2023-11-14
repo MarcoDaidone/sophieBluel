@@ -46,7 +46,4 @@ server.on('listening', () => {
      console.log('Listening on ' + bind);
 });
 
-//json web token
-const jwt = require('jsonwebtoken');
-
 server.listen(port);
