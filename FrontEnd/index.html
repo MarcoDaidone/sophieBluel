@@ -7,7 +7,19 @@
                name="viewport"
                content="width=device-width, initial-scale=1.0"
           />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+               integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.1/css/all.min.css"
+          />
+
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
                href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
@@ -22,9 +34,24 @@
                <h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
                <nav>
                     <ul>
-                         <li>projets</li>
-                         <li>contact</li>
-                         <li>login</li>
+                         <li>
+                              <a
+                                   href="/Users/marco/Desktop/opc_project_3/Portfolio-architecte-sophie-bluel/FrontEnd/index.html#portfolio"
+                                   >projets</a
+                              >
+                         </li>
+                         <li>
+                              <a
+                                   href="/Users/marco/Desktop/opc_project_3/Portfolio-architecte-sophie-bluel/FrontEnd/index.html#contact"
+                                   >contact</a
+                              >
+                         </li>
+                         <li>
+                              <a
+                                   href="/Users/marco/Desktop/opc_project_3/Portfolio-architecte-sophie-bluel/FrontEnd/login.html"
+                                   >login</a
+                              >
+                         </li>
                          <li>
                               <img
                                    src="./assets/icons/instagram.png"
@@ -34,7 +61,7 @@
                     </ul>
                </nav>
           </header>
-          <main>
+          <main class="testbody">
                <section id="introduction">
                     <figure>
                          <img src="./assets/images/sophie-bluel.png" alt="" />
@@ -62,7 +89,26 @@
                     </article>
                </section>
                <section id="portfolio">
-                    <h2>Mes Projets</h2>
+                    <div class="flex">
+                         <span class="modify"><h2>Mes Projets</h2></span>
+                    </div>
+                    <aside
+                         id="modal"
+                         class="modal"
+                         aria-hidden="true"
+                         aria-modal="false"
+                         style="display: none"
+                    >
+                         <div class="modal-wraper js-modal-stop">
+                              <button class="close_modal">close</button>
+                              <h2>Galerie photo</h2>
+                              <div class="gallery_delete"></div>
+                              <button class="button_modal">
+                                   Ajouter une photo
+                              </button>
+                         </div>
+                    </aside>
+
                     <div class="filter"></div>
                     <div class="gallery"></div>
                </section>
